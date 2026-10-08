@@ -52,6 +52,6 @@ print(
 # Step 5: Save the model to disk
 model_filename = '20newsgroups_model.joblib'
 
-joblib.dump(model, model_filename)
+joblib.dump(model, model_filename, compress=3)
 
 print(f"Model saved successfully as {model_filename}")
